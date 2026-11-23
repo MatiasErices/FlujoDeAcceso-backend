@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: turnoMS
+  datasource:
+    url: jdbc:mysql://localhost:${DB_PORT:3306}/turno_db?createDatabaseIfNotExist=true
+    username: root
+    password: ""
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+server:
+  port: 8082
