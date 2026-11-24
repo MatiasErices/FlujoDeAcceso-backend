@@ -2,7 +2,7 @@ spring:
   application:
     name: turnoMS
   datasource:
-    url: jdbc:mysql://localhost:${DB_PORT:3306}/turno_db?createDatabaseIfNotExist=true
+    url: jdbc:mysql://localhost:${DB_PORT:3306}/turnos_db?createDatabaseIfNotExist=true
     username: root
     password: ""
   jpa:
@@ -12,3 +12,6 @@ spring:
 
 server:
   port: 8082
+
+usuario-ms:
+  url: http://localhost:8081
